@@ -1,28 +1,13 @@
-# unplugin-starter
+# unplugin-image
 
-[![NPM version](https://img.shields.io/npm/v/unplugin-starter?color=a1b858&label=)](https://www.npmjs.com/package/unplugin-starter)
+[![NPM version](https://img.shields.io/npm/v/unplugin-image?color=a1b858&label=)](https://www.npmjs.com/package/unplugin-image)
 
-Starter template for [unplugin](https://github.com/unjs/unplugin).
-
-## Template Usage
-
-To use this template, clone it down using:
-
-```bash
-npx degit unplugin/unplugin-starter my-unplugin
-```
-
-And do a global replacement of `unplugin-starter` with your plugin name.
-
-Then you can start developing your unplugin 🔥
-
-To test your plugin, run: `pnpm run dev`
-To release a new version, run: `pnpm run release`
+🍣 A universal bundler plugin which imports JPG, PNG, GIF, SVG, and WebP files.
 
 ## Install
 
 ```bash
-npm i unplugin-starter
+npm i -D unplugin-image
 ```
 
 <details>
@@ -30,11 +15,11 @@ npm i unplugin-starter
 
 ```ts
 // vite.config.ts
-import Starter from 'unplugin-starter/vite'
+import UnpluginImage from 'unplugin-image/vite'
 
 export default defineConfig({
   plugins: [
-    Starter({ /* options */ }),
+    UnpluginImage({ /* options */ }),
   ],
 })
 ```
@@ -48,11 +33,11 @@ Example: [`playground/`](./playground/)
 
 ```ts
 // rollup.config.js
-import Starter from 'unplugin-starter/rollup'
+import UnpluginImage from 'unplugin-image/rollup'
 
 export default {
   plugins: [
-    Starter({ /* options */ }),
+    UnpluginImage({ /* options */ }),
   ],
 }
 ```
@@ -68,7 +53,7 @@ export default {
 module.exports = {
   /* ... */
   plugins: [
-    require('unplugin-starter/webpack')({ /* options */ })
+    require('unplugin-image/webpack')({ /* options */ })
   ]
 }
 ```
@@ -82,7 +67,7 @@ module.exports = {
 // nuxt.config.js
 export default defineNuxtConfig({
   modules: [
-    ['unplugin-starter/nuxt', { /* options */ }],
+    ['unplugin-image/nuxt', { /* options */ }],
   ],
 })
 ```
@@ -99,7 +84,7 @@ export default defineNuxtConfig({
 module.exports = {
   configureWebpack: {
     plugins: [
-      require('unplugin-starter/webpack')({ /* options */ }),
+      require('unplugin-image/webpack')({ /* options */ }),
     ],
   },
 }
@@ -113,11 +98,19 @@ module.exports = {
 ```ts
 // esbuild.config.js
 import { build } from 'esbuild'
-import Starter from 'unplugin-starter/esbuild'
+import UnpluginImage from 'unplugin-image/esbuild'
 
 build({
-  plugins: [Starter()],
+  plugins: [UnpluginImage()],
 })
 ```
 
 <br></details>
+
+## Usage
+
+### Options
+
+For all options please refer to [docs](https://github.com/rollup/plugins/tree/master/packages/image#options).
+
+This plugin accepts all [@rollup/plugin-image](https://github.com/rollup/plugins/tree/master/packages/image#options) options.

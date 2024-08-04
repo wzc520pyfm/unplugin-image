@@ -1,17 +1,17 @@
 {
-  "name": "unplugin-starter",
+  "name": "unplugin-image",
   "type": "module",
   "version": "0.1.0",
   "packageManager": "pnpm@8.6.12",
-  "description": "",
+  "description": "A universal bundler plugin which imports JPG, PNG, GIF, SVG, and WebP files.",
   "license": "MIT",
-  "homepage": "https://github.com/antfu/unplugin-starter#readme",
+  "homepage": "https://github.com/wzc520pyfm/unplugin-image#readme",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/antfu/unplugin-starter.git"
+    "url": "git+https://github.com/wzc520pyfm/unplugin-image.git"
   },
   "bugs": {
-    "url": "https://github.com/antfu/unplugin-starter/issues"
+    "url": "https://github.com/wzc520pyfm/unplugin-image/issues"
   },
   "keywords": [
     "unplugin",
@@ -122,7 +122,9 @@
     }
   },
   "dependencies": {
-    "unplugin": "^1.5.1"
+    "@rollup/pluginutils": "^5.1.0",
+    "mini-svg-data-uri": "^1.4.4",
+    "unplugin": "^1.12.0"
   },
   "devDependencies": {
     "@antfu/eslint-config": "^2.2.2",
