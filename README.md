@@ -19,7 +19,10 @@ import UnpluginImage from 'unplugin-image/vite'
 
 export default defineConfig({
   plugins: [
-    UnpluginImage({ /* options */ }),
+    {
+      ...UnpluginImage({ /* options */ }),
+      enforce: 'pre',
+    },
   ],
 })
 ```
