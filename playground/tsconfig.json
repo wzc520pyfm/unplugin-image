@@ -1,4 +1,4 @@
 {
   "extends": "../tsconfig.json",
-  "include": ["images.d.ts"]
+  "include": ["../images.d.ts"]
 }

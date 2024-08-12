@@ -66,6 +66,9 @@
       "import": "./dist/types.js",
       "require": "./dist/types.cjs"
     },
+    "./images-types": {
+      "types": "./images.d.ts"
+    },
     "./*": "./*"
   },
   "main": "dist/index.cjs",
