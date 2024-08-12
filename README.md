@@ -117,3 +117,17 @@ build({
 For all options please refer to [docs](https://github.com/rollup/plugins/tree/master/packages/image#options).
 
 This plugin accepts all [@rollup/plugin-image](https://github.com/rollup/plugins/tree/master/packages/image#options) options.
+
+### TypeScript
+
+If you are using TypeScript, you need to add the following to your `tsconfig.json` file:
+
+```json
+{
+  "compilerOptions": {
+    "types": [
+      "unplugin-image/images-types"
+    ]
+  }
+}
+```
